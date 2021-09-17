@@ -3,14 +3,13 @@ import { Box, Flex } from '@chakra-ui/layout';
 import { Slider, SliderFilledTrack, SliderThumb, SliderTrack } from '@chakra-ui/slider';
 import React, { useState } from 'react'
 import chairImage from "../../assets/chair.svg"
-import DarkAnnotation from "../../assets/DarkAnnotation.svg"
 import sliderImage from "../../assets/slider.svg"
 import "./styles.css"
 interface Props {
 
 }
 
-export const SliderComponent: React.FC<Props> = ({ }) => {
+export const SliderComponent: React.FC<Props> = () => {
 
         const [val, setVal] = useState(75);
         return (

@@ -1,5 +1,5 @@
 import { Image } from '@chakra-ui/image';
-import { Box, Flex, Text } from '@chakra-ui/layout';
+import { Flex, Text } from '@chakra-ui/layout';
 import { CircularProgress, CircularProgressLabel } from '@chakra-ui/progress';
 import React from 'react'
 import dotsImage from "../../assets/dotsOnPage.svg";
@@ -10,7 +10,7 @@ interface Props {
 
 }
 
-const Home: React.FC<Props> = ({ }) => {
+const Home: React.FC<Props> = () => {
 
     return (
         <Flex direction="column" width="1000px" alignItems="center" justifyContent="center" marginLeft="auto" marginRight="auto" marginTop="20px" >

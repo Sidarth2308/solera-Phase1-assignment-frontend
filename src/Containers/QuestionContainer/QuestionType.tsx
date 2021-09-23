@@ -1,6 +1,10 @@
 import React from "react";
 import RadioButton from "../../Components/RadioButton";
-import { SliderComponent } from "../../Components/Slider";
+import {
+  SliderComponent,
+  SliderWithOneGraphic,
+  SliderWithOneGraphicAndNotation
+} from "../../Components/Slider";
 
 interface Props {
   type: {
@@ -17,6 +21,15 @@ const QuestionType: React.FC<Props> = ({ type, graphic }) => {
     return <RadioButton graphic={graphic} options={type.options} />;
   } else if (type.id === 1) {
     return <SliderComponent graphic={graphic} />;
+  } else if (type.id === 2) {
+    return <SliderWithOneGraphic graphic={graphic} />;
+  } else if (type.id === 3) {
+    return (
+      <SliderWithOneGraphicAndNotation
+        graphic={graphic}
+        options={type.options}
+      />
+    );
   } else {
     return <div>I am QuestionType</div>;
   }

@@ -66,7 +66,6 @@ const QuestionContainer: React.FC<Props> = ({
         <Image src={dotsImage} />
       </Flex>
       <QuestionType type={data.type} graphic={data.graphic} />
-      {/* <SliderComponent /> */}
       <Flex alignItems="center" justifyContent="center" userSelect="none">
         <Flex className="PreviousButton" onClick={handlePrev}>
           <Image width="40%" src={arrowIcon} className="LeftArrow" />

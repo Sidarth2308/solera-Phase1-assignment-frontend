@@ -6,7 +6,6 @@ import dotsImage from "../../assets/dotsOnPage.svg";
 import arrowIcon from "../../assets/arrow.svg";
 import { CircularProgress, CircularProgressLabel } from "@chakra-ui/progress";
 import { Image } from "@chakra-ui/image";
-import { SliderComponent } from "../../Components/Slider";
 import QuestionType from "./QuestionType";
 interface Props {
   data: {
